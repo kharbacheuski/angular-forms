@@ -1,0 +1,13 @@
+label {
+    color: black;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input {
+        width: 150px;
+    }
+}

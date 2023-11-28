@@ -1,14 +1,14 @@
 <main class="main">
-  <h1 class="main-title">{{title}}</h1>
+  <mat-toolbar class="navigation">
+    <button class="navigation-btn" mat-raised-button color="primary" routerLink="/">Home</button>
+    <button class="navigation-btn" mat-raised-button color="primary" routerLink="/blog">Blog</button>
+    <button class="navigation-btn" mat-raised-button color="primary" routerLink="/about">About</button>
+    <button class="navigation-btn" mat-raised-button color="primary" routerLink="/login">Login</button>
+  </mat-toolbar>
 
-  <div class="navigation">
-    <div class="navigation-wrapper">
-      <button class="navigation-btn" routerLink="/">Home</button>
-      <button class="navigation-btn" routerLink="/login">Login</button>
-      <button class="navigation-btn" routerLink="/about">About</button>
-    </div>
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
-  <router-outlet></router-outlet>
 </main>
 
 
